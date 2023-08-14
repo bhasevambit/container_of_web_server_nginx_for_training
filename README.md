@@ -1,6 +1,6 @@
-# Container of Nginx Web Server Training
+# Container of Nginx Web Server for Training
 
-This repository is Container for training of Nginx Web Server.
+This repository is Container of Nginx Web Server for training .
 
 ## Usage
 
