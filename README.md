@@ -6,16 +6,16 @@ This repository is Container of Nginx Web Server for training.
 
 ### Docker container build
 
-`docker build -t container_web_server_nginx .`
+`docker build -t container_of_web_server_nginx_for_training.`
 
 ### Docker container run
 
-`docker run --name container_web_server_nginx --rm -d -p 8080:8080 container_web_server_nginx`
+`docker run --name container_of_web_server_nginx_for_training --rm -d -p 8080:8080 container_of_web_server_nginx_for_training`
 
 ### Docker container stop and remove
 
-`docker stop container_web_server_nginx`
+`docker stop container_of_web_server_nginx_for_training`
 
 ### Docker image remove
 
-`docker image rm container_web_server_nginx`
+`docker image rm container_of_web_server_nginx_for_training`
