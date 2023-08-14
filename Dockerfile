@@ -1,6 +1,18 @@
 # --- Base Image pull from DockerHub ---
 FROM nginx:latest
 
+# --- OS Package Update ---
+RUN apt update
+
+# --- OS Timezone Setting ---
+RUN apt install -y tzdata
+ENV TZ=Asia/Tokyo
+
+# OS Package Install
+RUN apt install -y \
+    wget \ 
+    git
+
 # --- Copy Nginx Configuration files ---
 # General Settings
 # COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
@@ -22,7 +34,6 @@ COPY ./nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf
 
 # Domain Settings
 # COPY ./nginx/sites-available/default /etc/nginx/sites-available/default
-
 
 # --- Copy HTML Contents ---
 COPY ./src/index.html /var/www/index.html
